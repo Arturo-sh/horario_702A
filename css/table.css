@@ -1,0 +1,78 @@
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.content {
+    color: #FFFFFF;
+    text-align: center;
+    min-width: 100%;
+}
+
+.table {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: 1.2;
+}
+
+td {
+    border: 1px solid #04CE21;
+}
+
+.border {
+    background: linear-gradient(to bottom right, rgb(100, 0, 0) 10%, rgba(10, 5, 120));
+}
+
+.leng {
+    background: linear-gradient(to bottom right, rgb(200, 50, 10) 10%, rgba(20, 100, 10));
+}
+
+.conm {
+    background: linear-gradient(to bottom right, rgb(220, 2, 20) 10%, rgb(2, 20, 220));
+}
+
+.tall {
+    background: linear-gradient(to bottom right, rgb(2, 50, 2) 10%, rgb(212, 20, 50));
+}
+
+.sist {
+    background: linear-gradient(to bottom right, rgb(100, 0, 90) 10%, rgba(4, 10, 0));
+}
+
+.gest {
+    background: linear-gradient(to bottom right, rgb(20, 0, 36) 10%, rgba(9, 121, 40));
+}
+
+.topic {
+    background: linear-gradient(to bottom right, rgb(2, 10, 36) 10%, rgb(9, 121, 150));
+}
+
+.arq {
+    background: linear-gradient(to bottom right, rgb(120, 0, 0) 10%, rgb(200, 110, 0));
+}
+
+.tuto {
+    background: linear-gradient(to bottom right, rgb(255, 0, 10) 10%, rgb(2, 25, 10));
+}
+
+.empty {
+    background: linear-gradient(to bottom right, rgb(0, 0, 0) 10%, rgb(0, 10, 100));
+}
+
+
+/* .FT {
+    background: linear-gradient(to bottom right, rgb(0, 0, 255) 10%, rgb(24, 2, 1));
+} */
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 2vh;
+    }
+    .content {
+        margin: 0;
+        padding: 0;
+    }
+    .table {
+        overflow-x: scroll;
+    }
+}

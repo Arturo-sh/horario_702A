@@ -1,0 +1,14 @@
+{
+    "name": "Horario ISC 702-A",
+    "short_name": "Horario 702-A",
+    "start_url": ".",
+    "background_color": "#000000",
+    "theme_color": "#000a64",
+    "display": "standalone",
+    "description": "Horario escolar sept2022 - ene2023 para alumnos de séptimo semestre de la carrera de ingeniería en Sistemas Computacionales extensión Jesús Carranza, Ver.",
+    "icons": [{
+        "src": "images/logoApp.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
