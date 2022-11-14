@@ -1,27 +1,39 @@
-setInterval(updateTime, 1000);
+window.addEventListener("load", updateTime);
+
+materiasLunes = ["f1c1", "f2c1", "f3c1", "f4c1", "f5c1", "f6c1", "f7c1", "f8c1", "f9c1"];
+materiasMartes = ["f1c2", "f2c2", "f3c2", "f4c2", "f5c2", "f6c2", "f7c2", "f8c2", "f9c2"];
+materiasMiercoles = ["f1c3", "f2c3", "f3c3", "f4c3", "f5c3", "f6c3", "f7c3", "f8c3", "f9c3"];
+materiasJueves = ["f1c4", "f2c4", "f3c4", "f4c4", "f5c4", "f6c4", "f7c4", "f8c4", "f9c4"];
+materiasViernes = ["f1c5", "f2c5", "f3c5", "f4c5", "f5c5", "f6c5", "f7c5", "f8c5", "f9c5"];
 
 function updateTime() {
-    let ahora = new Date();
-    let dia = ahora.getDay();
-    let hora = ahora.getHours();
+    var ahora = new Date();
+    var hora = ahora.getHours();
+    var dia = ahora.getDay();
+
+    var minutos = ahora.getMinutes();
+    var tiempoRestante = 1000 * minutos;
 
     switch (dia) {
         case 1:
-            aux(hora, ["f1c1", "f2c1", "f3c1", "f4c1", "f5c1", "f6c1", "f7c1", "f8c1", "f9c1"]);
+            aux(hora, materiasLunes);
             break;
         case 2:
-            aux(hora, ["f1c2", "f2c2", "f3c2", "f4c2", "f5c2", "f6c2", "f7c2", "f8c2", "f9c2"]);
+            aux(hora, materiasMartes);
             break;
         case 3:
-            aux(hora, ["f1c3", "f2c3", "f3c3", "f4c3", "f5c3", "f6c3", "f7c3", "f8c3", "f9c3"]);
+            aux(hora, materiasMiercoles);
             break;
         case 4:
-            aux(hora, ["f1c4", "f2c4", "f3c4", "f4c4", "f5c4", "f6c4", "f7c4", "f8c4", "f9c4"]);
+            aux(hora, materiasJueves);
             break;
         case 5:
-            aux(hora, ["f1c5", "f2c5", "f3c5", "f4c5", "f5c5", "f6c5", "f7c5", "f8c5", "f9c5"]);
+            aux(hora, materiasViernes);
             break;
     }
+
+    setTimeout(updateTime, tiempoRestante);
+
 }
 
 function aux(hora, lista) {
